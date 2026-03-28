@@ -3,7 +3,7 @@
 Dashboard interactivo de inteligencia de negocio para **maximus.com.ar**, tienda de hardware gaming.  
 Dos módulos: análisis del catálogo de productos + comportamiento de tráfico web (Google Analytics 4).
 
-🔗 **[Ver dashboard en vivo](https://neptunonet.github.io/MaxumusDash/)**
+🔗 **[Ver dashboard en vivo](https://neptunonet.github.io/MaximusDash/)**
 
 ---
 
@@ -22,7 +22,7 @@ Análisis de comportamiento de usuarios — últimos 90 días de datos reales de
 ## De dónde salen los datos
 
 ### Catálogo — Web Scraping
-Un script en Python (`scraper_maximus_final.py`) que usa **Playwright** (browser automatizado) para recorrer el sitio de forma sistemática:
+Un script en Python para recorrer el sitio de forma sistemática:
 
 - Recorre las 15 categorías activas página por página
 - Entra al detalle de cada producto individualmente
@@ -32,7 +32,7 @@ Un script en Python (`scraper_maximus_final.py`) que usa **Playwright** (browser
 **Resultado:** 586 productos scrapeados, 0 errores, 0 categorías vacías.
 
 ### Tráfico — Google Analytics 4 API
-Un script en Python (`analytics_maximus.py`) conectado a la **GA4 Data API** via OAuth con la cuenta autorizada. Baja 90 días de datos reales:
+Un script en Python conectado a la **GA4 Data API** via OAuth con la cuenta autorizada. Baja 90 días de datos reales:
 
 - Sesiones por día
 - Páginas más visitadas
@@ -82,22 +82,6 @@ Un script en Python (`analytics_maximus.py`) conectado a la **GA4 Data API** via
 | Google Analytics Data API | Extracción de datos GA4 |
 | Chart.js | Visualizaciones |
 | GitHub Pages | Hosting del dashboard |
-
----
-
-## Archivos
-
-```
-index.html            → Landing page principal
-catalogo.html         → Dashboard de catálogo
-analytics.html        → Dashboard de Analytics
-products.json         → Datos del catálogo (scraping)
-analytics_data.json   → Datos de GA4
-
-scraper_maximus_final.py   → Script de scraping
-analytics_maximus.py       → Script de extracción GA4
-reconocimiento_maximus.py  → Script de análisis de estructura HTML
-```
 
 ---
 

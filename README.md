@@ -60,7 +60,6 @@ Un script en Python conectado a la **GA4 Data API** via OAuth con la cuenta auto
 ### Tráfico Web (últimos 90 días)
 
 | Métrica | Valor |
-
 |---|---|
 | Sesiones totales | 1.103.550 |
 | Usuarios activos | 803.521 |
